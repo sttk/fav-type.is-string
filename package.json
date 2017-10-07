@@ -1,5 +1,5 @@
 {
-  "name": "fav-type.is-string",
+  "name": "@fav/type.is-string",
   "version": "0.5.0",
   "description": "Checks whether a value is a string or not.",
   "main": "index.js",
