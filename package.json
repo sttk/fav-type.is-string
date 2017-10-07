@@ -1,6 +1,6 @@
 {
   "name": "fav-type.is-string",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "Checks whether a value is a string or not.",
   "main": "index.js",
   "files": [
@@ -13,8 +13,9 @@
     "web:build": "npm run web:build-src && npm run web:build-test",
     "web:build-src": "browserify index.js --standalone fav.type.is-string -o web/fav.type.is-string.js && cd web && uglifyjs fav.type.is-string.js --compress --mangle -o fav.type.is-string.min.js --source-map url=fav.type.is-string.min.js.map",
     "web:build-test": "node tool/mktest.js",
-    "web:install": "npm i --no-save phantomjs-prebuilt mocha-phantomjs mocha-chrome",
+    "chrome:install": "npm i --no-save mocha-chrome",
     "chrome:test": "mocha-chrome test/web/fav-type.is-string.test.html",
+    "phantom:install": "npm i --no-save phantomjs-prebuilt mocha-phantomjs",
     "phantom:test": "mocha-phantomjs -p node_modules/.bin/phantomjs test/web/fav-type.is-string.test.html",
     "build": "npm run lint && npm run coverage && npm run web:build"
   },
