@@ -33,9 +33,9 @@
   "author": "Takayuki Sato",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sttk/fav-type/issues"
+    "url": "https://github.com/sttk/fav-type.is-string/issues"
   },
-  "homepage": "https://github.com/sttk/fav-type#readme",
+  "homepage": "https://github.com/sttk/fav-type.is-string#readme",
   "devDependencies": {
     "browserify": "^14.4.0",
     "eslint": "^4.8.0",
