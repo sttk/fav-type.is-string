@@ -14,7 +14,7 @@ To install from npm:
 $ npm install --save @fav/type.is-string
 ```
 
-***NOTE:*** *npm < 2.7.0 does not support scoped package, but even old version Node.js supports it. So when you use such older npm, you should download this package from [github.com][repo-url], and move it in `node_modules/@fav/type.is-string/` direcotry manually.*
+***NOTE:*** *npm < 2.7.0 does not support scoped package, but even old version Node.js supports it. So when you use such older npm, you should download this package from [github.com][repo-url], and move it in `node_modules/@fav/type.is-string/` directory manually.*
 
 
 ## Usage
@@ -24,6 +24,7 @@ For Node.js, when installing `@fav/type.is-string` from npm:
 ```js
 var isString = require('@fav/type.is-string');
 isString('abc'); // => true
+isString.not('abc'); // => false
 ```
 
 For Web browsers:
@@ -33,8 +34,10 @@ For Web browsers:
 <script>
 var isString = fav.type.isString;
 isString('abc'); // => true
+isString.not('abc'); // => false
 </script>
 ```
+
 
 ## API
 
@@ -51,6 +54,25 @@ Checks if *value* is an string.
 #### Return:
 
 True, if *value* is a string.
+
+**Type:** boolean
+
+
+### <u>isString.not(value) : boolean</u>
+
+Checks if *value* is not an string.
+
+This function always returns a negative boolean of `isString(value)`.
+
+#### Parameter:
+
+| Parameter |  Type  | Description               |
+|-----------|:------:|---------------------------|
+| value     | *any*  | The value to be checked.  |
+
+#### Return:
+
+True, if *value* is not a string.
 
 **Type:** boolean
 

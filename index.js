@@ -10,4 +10,13 @@ function isString(value) {
   return false;
 }
 
+function isNotString(value) {
+  return !isString(value);
+}
+
+Object.defineProperty(isString, 'not', {
+  enumerable: true,
+  value: isNotString,
+});
+
 module.exports = isString;
