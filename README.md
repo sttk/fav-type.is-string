@@ -19,7 +19,7 @@ $ npm install --save @fav/type.is-string
 
 ## Usage
 
-For Node.js, when installing `@fav/type.is-string` from npm:
+For Node.js:
 
 ```js
 var isString = require('@fav/type.is-string');
