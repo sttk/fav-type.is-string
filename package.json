@@ -1,6 +1,6 @@
 {
   "name": "@fav/type.is-string",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "Checks whether a value is a string or not.",
   "main": "index.js",
   "files": [
